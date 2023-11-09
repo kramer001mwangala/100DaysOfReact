@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import evo from "./assets/evo.jpg";
+import Test from "../challenges/props";
+
 function Header() {
   return (
     <header>
@@ -17,7 +19,8 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        <Header title="kramer" image={evo} />
+        <Test />
         <p>Before we start this is our goal</p>
         <img src={evo} alt="evo" size="300" />
         <a href="https://vitejs.dev" target="_blank">
